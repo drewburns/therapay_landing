@@ -52,7 +52,8 @@
     <header class="masthead container" style="background-color: white;">
         <form action="https://formspree.io/f/mvonblrw" method="POST" class="col-lg-6 col-sm-12 col offset-lg-3">
             <h3>Learn how much you could get back from your therapy sessions</h3>
-            <p style="margin-bottom: 40px;"><i>Therapay members are getting back up to 50% back each week when they pay out of pocket for their sessions</i></p>
+            <p style="margin-bottom: 40px;"><i>Therapay members are getting back up to 50% back each week <b>in cash</b>
+                    when they pay out of pocket for their sessions</i></p>
             <h5>First a bit about you:</h5>
             <div class="form-group">
                 <label for="firstname">First name</label>
@@ -72,13 +73,18 @@
             <h5>Now your insurance information (on your insurance card)</h5>
             <div class="form-group">
                 <label for="exampleInputEmail1">Insurance Provider </label>
-                <input name='company' type="text" class="form-control" id="insuranceProvider" aria-describedby="lastname"
-                    placeholder="Company name">
+                <input name='company' type="text" class="form-control" id="insuranceProvider"
+                    aria-describedby="lastname" placeholder="Company name">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Member ID</label>
                 <input name='memberId' type="text" class="form-control" id="memberId" aria-describedby="lastname"
                     placeholder="1234">
+            </div>
+            <div class="form-group">
+                <label for="cost">How much do you pay out of pocket each session?</label>
+                <input name='cost' type="text" class="form-control" id="cost" aria-describedby="cost"
+                    placeholder="$125">
             </div>
             <button type="submit" class="btn btn-primary" style="margin-top: 10px;width: 200px;">Submit</button>
             <hr />
