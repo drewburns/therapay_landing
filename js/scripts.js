@@ -10,11 +10,11 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 var savings = document.getElementById("savings");
 output.innerHTML = slider.value; // Display the default slider value
-savings.innerHTML = (slider.value * 52) * 0.5
+savings.innerHTML = slider.value * 52 * 0.5;
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function () {
   output.innerHTML = this.value;
-  savings.innerHTML = (this.value * 52) * 0.5
+  savings.innerHTML = this.value * 52 * 0.5;
 };
 
 window.addEventListener("DOMContentLoaded", (event) => {
@@ -40,8 +40,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 6f196e07a84b375e9473ecfc7a0a8b1d23cd6d4b

@@ -127,6 +127,12 @@ h2, .h2 {
   }
 }
 
+@media (max-width: 600px) {
+  .hide-mobile {
+    background-color: red;
+    display: none;
+  }
+}
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
 }

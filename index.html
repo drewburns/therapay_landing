@@ -38,7 +38,7 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                     <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Sign Up</a></li> -->
                 </ul>
-                <a href="https://quiz.gettherapay.com" class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                <a href="#emailForm" class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
                     <span class="d-flex align-items-center">
                         <i class="bi-chat-text-fill me-2"></i>
                         <span class="small">Get started</span>
@@ -54,11 +54,11 @@
                 <div class="col-lg-6">
                     <!-- Mashead text and app badges-->
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-1 lh-1 mb-3">Get reimbursed for your therapy</h1>
-                        <p class="lead fw-normal text-muted mb-5">Therapay automatically submits and tracks your therapy
-                            claims getting you money back from your insurance. Even out of network.</p>
+                        <h1 class="display-1 lh-1 mb-3">Save money on therapy</h1>
+                        <p class="lead fw-normal text-muted mb-5">We help you get back up to 80% back each week. No
+                            credit card required. We get paid when you do.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <a href="https://quiz.gettherapay.com">
+                            <a href="#emailForm">
                                 <div class="btn btn-primary rounded-pill btn-lg">Get started</div>
                             </a>
                             <!-- <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge"
@@ -88,7 +88,7 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="50" cy="50" r="50"></circle>
                         </svg> -->
-                    <img src="./assets/img/therapy.png" />
+                    <img src="./assets/img/therapy.png" class="hide-mobile" />
                     <!-- <div class="device-wrapper">
                             <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                 <div class="screen bg-black">
@@ -96,6 +96,14 @@
                                 </div>
                             </div>
                         </div> -->
+                </div>
+                <div class="col-lg-6 offset-lg-3" style="margin-top: 35px;align-items: center; justify-content: center; display: flex;">
+                    <img src="./assets/john.png" style="height: 70px; width: 70px; border-radius: 100%;">
+                    <div style="margin-left: 10px;padding-top: 10px;">
+                        <b>John (Therapay Member)</b>
+                        <p>No deal with the devil, no gotcha. Dealing with insurance is opaque and annoying,
+                            Therapay makes it so I can save on therapy with no hassle.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,7 +115,7 @@
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-10">
                     <div class="h2 fs-1 text-white mb-4">Most insurance plans cover 50-100% of your therapy sessions.
-                        Stop leaving money on the table and we'll help you collect from insurance </div>
+                        We specialize in fighting insurance companies so you don't have to </div>
                     <!-- <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" /> -->
                     <hr />
                     <form class="range-form">
@@ -240,15 +248,16 @@
                 <h2 class="text-white display-1 lh-1 mb-4">
                     Stop waiting.
                     <br />
-                    Start getting reimbursed.
+                    Start saving.
                 </h2>
                 <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://quiz.gettherapay.com">Sign up</a> -->
-                <form action="https://formspree.io/f/mvonblrw" method="POST" class="col-lg-6 col-sm-12 col offset-lg-3" style="color:white;">
+                <form id="emailForm" action="https://formspree.io/f/mvonblrw" method="POST"
+                    class="col-lg-6 col-sm-12 col offset-lg-3" style="color:white;">
                     <div class="form-group">
-                        <h3>Get in touch!</h3>
+                        <h3>Get started!</h3>
                         <label for="email">Email</label>
-                        <input name='email' type="email" class="form-control" id="email"
-                            aria-describedby="email" placeholder="email">
+                        <input name='email' type="email" class="form-control" id="email" aria-describedby="email"
+                            placeholder="email">
                     </div>
                     <button type="submit" class="btn btn-primary" style="margin-top: 10px;width: 200px;">Submit</button>
                 </form>
@@ -280,85 +289,7 @@
         </div>
     </footer> -->
     <!-- Feedback Modal-->
-    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                    <a href="https://quiz.gettherapay.com">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Get started</h5>
-                    </a>
-                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
-                                id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
